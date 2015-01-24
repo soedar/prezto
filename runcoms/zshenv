@@ -9,3 +9,15 @@
 if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+#
+# Ruby
+# 
+if which rbenv > /dev/null; then
+    eval "$(rbenv init -)"
+fi
+
+alias gst='git status'
+alias ga='git add'
+alias gap='git add --patch'
+alias be='bundle exec'
