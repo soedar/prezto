@@ -21,3 +21,4 @@ alias gst='git status'
 alias ga='git add'
 alias gap='git add --patch'
 alias be='bundle exec'
+alias stmux="if tmux has-session -t $USER; then tmux attach -t $USER; else tmux new -s $USER; fi"
