@@ -11,3 +11,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.soedy/zsh/prezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+if [[ -s "${ZDOTDIR:-$HOME}/.zshrc.local" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zshrc.local"
+fi
